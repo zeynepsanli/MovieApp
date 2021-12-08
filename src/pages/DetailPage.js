@@ -1,9 +1,9 @@
 import React from "react";
 import { Text, View } from "react-native";
 
-const MainPage = () => {
+const DetailPage = () => {
   <View>
-    <Text>Main Page</Text>
+    <Text>Detail Page</Text>
   </View>
 }
-export default MainPage
+export default DetailPage

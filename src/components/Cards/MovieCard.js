@@ -1,9 +1,9 @@
 import React from "react";
 import { Text, View } from "react-native";
 
-const MainPage = () => {
+const MovieCard = () => {
   <View>
-    <Text>Main Page</Text>
+    <Text>Movie MovieCard</Text>
   </View>
 }
-export default MainPage
+export default MovieCard
