@@ -1,10 +1,11 @@
 import React from "react";
 import { Text, View } from "react-native";
+import MovieDetailCard from "../components/Cards/MovieDetailCard"
 
 const DetailPage = () => {
   return(
   <View>
-    <Text>Detail Page</Text>
+    <MovieDetailCard></MovieDetailCard>
   </View>
   )}
 export default DetailPage

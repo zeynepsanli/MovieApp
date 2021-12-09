@@ -1,10 +1,10 @@
 import React from "react";
-import { Text, View } from "react-native";
+import { Text, TouchableOpacity, View } from "react-native";
 
-const MovieCard = () => {
+const MovieCard = ({item, onPress}) => {
   return (
-  <View>
-    <Text>Movie MovieCard</Text>
-  </View>
+  <TouchableOpacity onPress={onPress}>
+    <Text>{item.name}</Text>
+  </TouchableOpacity>
   )}
 export default MovieCard
