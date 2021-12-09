@@ -8,11 +8,12 @@ import DetailPage from "../pages/DetailPage";
 const Stack = createNativeStackNavigator()
 
 const Navigation = () => {
+  return(
   <NavigationContainer>
     <Stack.Navigator>
       <Stack.Screen name = "MainPage" component={MainPage}></Stack.Screen>
       <Stack.Screen name = "DetailPage" component={DetailPage}></Stack.Screen>
     </Stack.Navigator>
   </NavigationContainer>
-}
+  )}
 export default Navigation
