@@ -4,7 +4,7 @@ const styles = StyleSheet.create({
 
   container: {
     flex: 2,
-    backgroundColor: '#ffca28'
+    backgroundColor: '#221f27'
   },
   genre: {
     flexDirection: 'row',
