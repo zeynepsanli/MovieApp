@@ -11,8 +11,14 @@ const Navigation = () => {
   return(
   <NavigationContainer>
     <Stack.Navigator>
-      <Stack.Screen name = "MainPage" component={MainPage}></Stack.Screen>
-        <Stack.Screen name="DetailPage" component={DetailPage} ></Stack.Screen>
+      <Stack.Screen 
+        name = "MainPage" 
+        component={MainPage}
+        options={{headerShown:false}} />
+      <Stack.Screen 
+        name="DetailPage" 
+        component={DetailPage} 
+        options={{headerShown:false}} />
     </Stack.Navigator>
   </NavigationContainer>
   )}
