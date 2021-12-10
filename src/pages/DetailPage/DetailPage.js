@@ -11,7 +11,7 @@ import useFetch from "../../hooks/useFetch";
   const {data, loading} = useFetch(`${id}`)
   console.log(id)
   return(
-  <View>{loading ? <ActivityIndicator/> :
+    <View style={{ flex: 1 }}>{loading ? <ActivityIndicator /> :
     <MovieDetailCard item={data}/>
   }
   </View>
