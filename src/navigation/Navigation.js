@@ -12,7 +12,7 @@ const Navigation = () => {
   <NavigationContainer>
     <Stack.Navigator>
       <Stack.Screen name = "MainPage" component={MainPage}></Stack.Screen>
-      <Stack.Screen name = "DetailPage" component={DetailPage}></Stack.Screen>
+        <Stack.Screen name="DetailPage" component={DetailPage} ></Stack.Screen>
     </Stack.Navigator>
   </NavigationContainer>
   )}

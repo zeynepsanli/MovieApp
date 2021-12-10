@@ -9,7 +9,8 @@ const MainPage = () => {
   const {data, loading} = useFetch("")
   const navigation = useNavigation()
 
-  const handleRenderItem = ({item}) => (
+
+  const handleRenderItem = ({ item }) => (
     <MovieCard item={item} onPress={() => navigation.navigate("DetailPage", {id:item})}/>
   )
 
