@@ -1,0 +1,34 @@
+[
+{
+ "genres": {
+    "name": "ACTION",
+    "key": 0
+ },
+    "name": "COMEDY",
+    "key": 1
+ },
+ {
+    "name": "HORROR",
+    "key": 2
+ },
+ {
+    "name": "DRAMA",
+    "key": 3
+ },
+ {
+    "name": "FANTASY",
+    "key": 4
+ },
+ {
+    "name": "ROMANCE",
+    "key": 5
+ },
+ {
+    "name": "THRILLER",
+    "key": 6
+ },
+ {
+    "name": "ALL GENRES",
+    "key": 7
+ }
+]
