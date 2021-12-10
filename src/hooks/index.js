@@ -1,1 +1,1 @@
-export {default} from "./useMovieDetail"
+export {default} from "./useFetch"
