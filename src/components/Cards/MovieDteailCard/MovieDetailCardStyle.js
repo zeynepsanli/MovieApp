@@ -2,8 +2,8 @@ import { Dimensions, StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
 
-  body_container: {
-    flex: 1,
+  container: {
+    flex: 2,
     backgroundColor: '#ffca28'
   },
   genre: {
@@ -12,25 +12,30 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center'
   },
-  brief: {
+  body: {
     flex: 5,
     backgroundColor: "grey",
     margin: 10,
     borderRadius: 5,
     borderWidth: 1,
-    borderColor: 'black'
+    borderColor: 'black',
+    flexDirection:"row"
+  },
+  briefView:{
   },
   title: {
     fontSize: 20,
     fontWeight: 'bold',
-    padding: 10
+    padding: 10,
+    color:"grey"
   },
   text: {
     fontSize: 15,
-    padding: 10
+    padding: 10,
+    color:"grey"
   },
   cast: {
-    flex: 3,
+    flex: 2,
     padding: 10,
     margin: 10
 
@@ -43,8 +48,9 @@ const styles = StyleSheet.create({
     padding: 10,
     borderRadius: 8,
     height: Dimensions.get('screen').height / 20
+  },
+  image:{
+    flex:2
   }
-
-
 })
 export default styles
