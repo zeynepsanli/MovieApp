@@ -1,5 +1,6 @@
 import React from "react";
 import { ScrollView, Text, View, Image, ImageBackground } from "react-native";
+import { Icon } from "react-native-vector-icons/FontAwesome";
 import styles from "./MovieDetailCardStyle";
 
 const MovieDetailCard = ({item}) => {
@@ -22,7 +23,9 @@ const MovieDetailCard = ({item}) => {
         <View style={styles.briefView}>
           <Text style={styles.title} >{item.name}</Text>
           <Text style={styles.text} >{item.brief}</Text>
-          <Text style={styles.text}>{item.rate}</Text>
+          <View>
+            <Text style={styles.text}>Rate :{item.rate}</Text>
+          </View>
         </View>
         </ImageBackground>
       </View>

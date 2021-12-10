@@ -18,7 +18,7 @@ import MovieCard from "../../components/Cards/MovieCard/MovieCard";
   )
 
   return(
-    <View style={{ flex: 1 }}>{loading ? <ActivityIndicator /> :
+    <View style={{ flex: 1,backgroundColor:"#221f27" }}>{loading ? <ActivityIndicator /> :
     <MovieDetailCard item={id} />
       }
       <View style={{flex:1}}>
