@@ -4,8 +4,8 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
 import MainPage from "../pages/MainPage/MainPage"
 import DetailPage from "../pages/DetailPage/DetailPage";
-import Comment from "../pages/CommentPage/Comment";
 import CommentStack from "./CommentStack";
+import Comment from "../pages/CommentPage/Comment";
 
 const Stack = createNativeStackNavigator()
 
@@ -14,17 +14,17 @@ const Navigation = () => {
   <NavigationContainer>
     <Stack.Navigator>
       <Stack.Screen 
-        name = "MainPage" 
+        name="MainPage" 
         component={MainPage}
         options={{headerShown:false}} />
       <Stack.Screen 
         name="DetailPage" 
         component={DetailPage} 
-          options={{ headerShown: false }} />
-        <Stack.Screen
-          name="CommmentPage"
-          component={CommentStack}
-          options={{ headerShown: false }} />
+        options={{ headerShown: false }} />
+      <Stack.Screen
+        name="CommentPage"
+        component={Comment}
+        options={{ headerShown: false }} />
       </Stack.Navigator>
   </NavigationContainer>
   )}
