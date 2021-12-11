@@ -5,7 +5,6 @@ const styles = StyleSheet.create({
     margin:10,
     backgroundColor:"orange",
     borderWidth:1,
-    borderRadius:20,
     height:Dimensions.get("screen").height / 4,
     width:Dimensions.get("screen").width / 2.5,
   },
