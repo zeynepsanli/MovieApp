@@ -7,6 +7,7 @@ const CommentCard = ({item}) => {
     return(
         <View style={styles.container}>
             <Text style={styles.text}>{item.comment}</Text>
+            <Text>User : {item.id}</Text>
         </View>
     )
 }

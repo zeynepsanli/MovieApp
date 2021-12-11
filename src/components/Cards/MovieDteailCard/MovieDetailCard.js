@@ -2,6 +2,7 @@ import { useNavigation } from "@react-navigation/native";
 import React from "react";
 import { ScrollView, Text, View, Image, ImageBackground } from "react-native";
 import Icon from "react-native-vector-icons/FontAwesome";
+
 import CommentButton from "../../Button/commentButton";
 import styles from "./MovieDetailCardStyle";
 
@@ -49,7 +50,10 @@ const MovieDetailCard = ({item}) => {
             )
           })}
         </View>
-        <CommentButton onPress={() => navigation.navigate("CommentPage")} />
+        <CommentButton
+          size={60}
+          text="See Reviews" 
+          onPress={() => navigation.navigate("CommentPage", {info:item})} />
       </View>
     </View>
 
