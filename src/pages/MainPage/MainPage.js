@@ -21,10 +21,6 @@ const MainPage = () => {
     <MovieCard item={item} onPress={() => navigation.navigate("DetailPage", {id:item})}/>
   )
 
-  const handleDetail = ({item}) => {
-    
-  }
-    
 
   return(
   <SafeAreaView style={styles.container}>
@@ -32,7 +28,7 @@ const MainPage = () => {
         <View style={styles.button_View}>
           {genres.map((gen, ind) => {
             return (
-              <GenreButton style={styles.button} genreName={gen.name} onPress={handleGenreFilter} />
+              <GenreButton style={styles.button} genreName={gen.name} onPress={handleGenreFilter} key={ind} />
             )
           })}
         </View> 
