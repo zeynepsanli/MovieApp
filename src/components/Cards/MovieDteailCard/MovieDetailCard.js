@@ -1,6 +1,7 @@
 import React from "react";
 import { ScrollView, Text, View, Image, ImageBackground } from "react-native";
-import { Icon } from "react-native-vector-icons/FontAwesome";
+import Icon from "react-native-vector-icons/FontAwesome";
+import CommentButton from "../../Button/commentButton";
 import styles from "./MovieDetailCardStyle";
 
 const MovieDetailCard = ({item}) => {
@@ -30,13 +31,17 @@ const MovieDetailCard = ({item}) => {
         </ImageBackground>
       </View>
       <View style={styles.cast} >
-        <Text>DIRECTOR: {item.director}</Text>
-        <Text>CAST:</Text>
-        {item.cast.map((cast, ind) => {
-          return (
-            <Text key={ind} >{cast}</Text>
-          )
-        })}
+        <View>
+          <Text>DIRECTOR: {item.director}</Text>
+          <Text>CAST:</Text>
+          {item.cast.map((cast, ind) => {
+            return (
+              <Text key={ind} >{cast}</Text>
+            )
+          })}
+        </View>
+        <CommentButton />
+
       </View>
     </View>
 

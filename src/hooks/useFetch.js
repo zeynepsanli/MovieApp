@@ -9,7 +9,7 @@ const useFetch = (id) => {
 
   async function fetchData () {
     try {
-      const response = await axios.get(`http://192.168.1.37:8081/movies/${id}`,)
+      const response = await axios.get(`http://10.0.2.2:3000/movies/${id}`,)
       setData(response.data)
       console.log(data)
       

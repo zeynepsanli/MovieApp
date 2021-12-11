@@ -5,7 +5,7 @@ import GenreButton from "../../components/Button/genreButton";
 import MovieCard from "../../components/Cards/MovieCard/MovieCard";
 import useFetch from "../../hooks/useFetch";
 import styles from "./MainPageStyles";
-import genres from "../../components/Genres/genres.json"
+import genres from "../../components/Genres/genres.json";
 
 
 const MainPage = () => {
@@ -25,21 +25,18 @@ const MainPage = () => {
     
   }
     
-  let source = data.filter(e => e.genre.includes(genre)) ?? "";
+
   return(
   <SafeAreaView style={styles.container}>
-    <View style={styles.button_View}>
-      <GenreButton style = {styles.button} genreName={"ACTION"} onPress={handleGenreFilter}/>
-      <GenreButton style = {styles.button} genreName={"COMEDY"} onPress={handleGenreFilter}/>
-      <GenreButton style = {styles.button} genreName={"HORROR"} onPress={handleGenreFilter}/>
-      <GenreButton style = {styles.button} genreName={"DRAMA"} onPress={handleGenreFilter}/>
-    </View> 
-    <View style={styles.button_View}> 
-      <GenreButton style = {styles.button} genreName={"FANTASY"} onPress={handleGenreFilter}/>
-      <GenreButton style = {styles.button} genreName={"ROMANCE"} onPress={handleGenreFilter}/>
-      <GenreButton style = {styles.button} genreName={"THRILLER"} onPress={handleGenreFilter}/>
-      <GenreButton style = {styles.button} genreName={"ALL GENRES"} onPress={handleGenreFilter}/>
-    </View>
+      <ScrollView style={styles.banner} horizontal={true} >
+        <View style={styles.button_View}>
+          {genres.map((gen, ind) => {
+            return (
+              <GenreButton style={styles.button} genreName={gen.name} onPress={handleGenreFilter} />
+            )
+          })}
+        </View> 
+      </ScrollView>
     <View style={{alignItems:"center", flex:15}}>{loading ? <ActivityIndicator />:
       <FlatList 
         data={data} 
@@ -47,8 +44,8 @@ const MainPage = () => {
         numColumns={2}
         horizontal={false} />
     }
-    </View>
-    
+      </View>
   </SafeAreaView>
   )}
 export default MainPage
+
