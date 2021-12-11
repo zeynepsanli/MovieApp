@@ -16,7 +16,6 @@ const styles = StyleSheet.create({
   },
   banner: {
     flex: 1
-  }
-  
+  } 
 })
 export default styles

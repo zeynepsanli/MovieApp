@@ -1,5 +1,6 @@
 import React from "react";
 import { TouchableOpacity, Text } from "react-native";
+
 import styles from "./genreButtonstyle";
 
 const GenreButton = ({genreName, onPress, active }) => {

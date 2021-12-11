@@ -5,8 +5,7 @@ const styles = StyleSheet.create({
     margin:5,
     backgroundColor:"grey",
     padding:3,
-    borderRadius:10
-
+    borderRadius: 10
   },
   text:{
     fontSize:15

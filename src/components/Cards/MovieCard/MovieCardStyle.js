@@ -10,14 +10,12 @@ const styles = StyleSheet.create({
   },
   imageContainer:{
     flex:1,
-    borderRadius:20,
-    
+    borderRadius: 20,
   },
   textView:{
     padding:10,
     justifyContent:"flex-end",
-    flex:1
-
+    flex: 1
   },
   text:{
     fontSize:15,

@@ -4,7 +4,6 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
 import MainPage from "../pages/MainPage/MainPage"
 import DetailPage from "../pages/DetailPage/DetailPage";
-import CommentStack from "./CommentStack";
 import Comment from "../pages/CommentPage/Comment";
 
 const Stack = createNativeStackNavigator()
