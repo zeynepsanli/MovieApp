@@ -53,6 +53,10 @@ const styles = StyleSheet.create({
   },
   image:{
     flex: 2,
+  },
+  rateView:{
+    flexDirection:"row",
+    alignItems:"center"
   }
 })
 export default styles
