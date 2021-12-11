@@ -16,16 +16,6 @@ const MovieDetailCard = ({item}) => {
 
   return (
     <View style={styles.container}>
-      
-      <View style={styles.genre}>
-        {item.genre.map((gen, ind) => {
-          return (
-          <View style={styles.genre_index} key={ind}>
-            <Text key={ind} >{gen}</Text>
-          </View>
-          )
-        })}
-      </View>
       <View style={styles.body} >
         <ImageBackground 
           style={styles.image}
@@ -33,10 +23,20 @@ const MovieDetailCard = ({item}) => {
         <View style={styles.briefView}>
           <Text style={styles.title} >{item.name}</Text>
           <Text style={styles.text} >{item.brief}</Text>
-          <View style={styles.rateView}>
+          <View style={styles.genreView}>
+            <View style={styles.rateView}>
+
             <Text style={styles.text}>Rate :{item.rate}</Text>
             <Icon name="star" color="yellow" size={20}/>
+            </View>
+            <Text style={styles.text}>Genre :</Text>
+            {item.genre.map((gen, ind) => {
+          return (
+            <Text key={ind} style = {styles.text} >{gen}</Text>
+          )
+        })}
           </View>
+         
         </View>
         </ImageBackground>
       </View>

@@ -25,14 +25,15 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 20,
-    fontWeight: 'bold',
+    fontWeight: '900',
     padding: 10,
     color:"white"
   },
   text: {
     fontSize: 15,
     padding: 10,
-    color:"white"
+    color:"white",
+    fontWeight:"900"
   },
   cast: {
     flex: 2,
@@ -56,7 +57,13 @@ const styles = StyleSheet.create({
   },
   rateView:{
     flexDirection:"row",
-    alignItems:"center"
+    alignItems:"center",
+    marginRight:20
+  },
+  genreView:{
+    flexDirection:"row",
+    alignItems:"center",
+    justifyContent:"space-between"
   }
 })
 export default styles
