@@ -13,7 +13,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center'
   },
   body: {
-    flex: 5,
+    flex: 6,
     backgroundColor: "grey",
     margin: 10,
     borderRadius: 5,
@@ -27,12 +27,12 @@ const styles = StyleSheet.create({
     fontSize: 20,
     fontWeight: 'bold',
     padding: 10,
-    color:"grey"
+    color:"white"
   },
   text: {
     fontSize: 15,
     padding: 10,
-    color:"grey"
+    color:"white"
   },
   cast: {
     flex: 2,

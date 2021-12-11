@@ -21,7 +21,8 @@ const styles = StyleSheet.create({
   },
   text:{
     fontSize:15,
-    fontWeight:"800"
+    fontWeight:"800",
+    color:"white"
   },
   rateView:{
     flexDirection:"row",
