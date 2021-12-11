@@ -13,14 +13,14 @@ const MovieCard = ({item, onPress}) => {
       source={{uri:item.image}} 
       style={styles.imageContainer}>
       <View style={styles.textView}>
-          <Text style={styles.text}>{item.name}</Text>
-          <View style ={styles.rateView}>
-            <Text style={styles.text}>{item.rate}</Text>
-            <Icon name='star' size={25} color='yellow' />
-          </View>
-            {item.genre.map((gen, ind) => {
-            return (
-              <Text style={styles.text} key={ind} >{gen}</Text>
+        <Text style={styles.text}>{item.name}</Text>
+        <View style ={styles.rateView}>
+          <Text style={styles.text}>{item.rate}</Text>
+          <Icon name='star' size={25} color='yellow' />
+        </View>
+          {item.genre.map((gen, ind) => {
+          return (
+            <Text style={styles.text} key={ind} >{gen}</Text>
             )
           })}
       </View>

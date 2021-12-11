@@ -5,6 +5,7 @@ import { ActivityIndicator, FlatList, Text, View } from "react-native";
 import MovieDetailCard from "../../components/Cards/MovieDteailCard/MovieDetailCard"
 import useFetch from "../../hooks/useFetch";
 import MovieCard from "../../components/Cards/MovieCard/MovieCard";
+import styles from "./DetailPageStyle";
 
 
   const DetailPage = () => {
@@ -22,11 +23,11 @@ import MovieCard from "../../components/Cards/MovieCard/MovieCard";
   const source = genre ? data.filter(a => a.genre.includes(genre)) : data
 
   return(
-    <View style={{ flex: 1,backgroundColor:"#221f27" }}>
+    <View style={styles.container}>
       {
       loading ? <ActivityIndicator /> : <MovieDetailCard item={id} />
       }
-      <View style={{flex:1}}>
+      <View style={styles.listView}>
         <FlatList 
           horizontal={true} 
           data={source} 
