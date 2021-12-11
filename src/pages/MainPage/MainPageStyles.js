@@ -14,6 +14,9 @@ const styles = StyleSheet.create({
     paddingRight:20,
     paddingTop:10
   },
+  banner: {
+    flex: 1
+  }
   
 })
 export default styles

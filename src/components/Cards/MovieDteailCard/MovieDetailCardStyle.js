@@ -37,8 +37,10 @@ const styles = StyleSheet.create({
   cast: {
     flex: 2,
     padding: 10,
-    margin: 10
-
+    margin: 10,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center'
   },
   genre_index:
   {
@@ -50,7 +52,7 @@ const styles = StyleSheet.create({
     height: Dimensions.get('screen').height / 20
   },
   image:{
-    flex:2
+    flex: 2,
   }
 })
 export default styles
