@@ -22,6 +22,8 @@ const styles = StyleSheet.create({
     flexDirection:"row"
   },
   briefView:{
+    backgroundColor:"#000000a0",
+    
   },
   title: {
     fontSize: 20,
@@ -31,9 +33,11 @@ const styles = StyleSheet.create({
   },
   text: {
     fontSize: 15,
-    padding: 10,
+    paddingTop: 10,
+    paddingBottom:10,
+    paddingLeft:4,
+    paddingRight:3,
     color:"white",
-    fontWeight:"900"
   },
   cast: {
     flex: 2,
@@ -54,16 +58,23 @@ const styles = StyleSheet.create({
   },
   image:{
     flex: 2,
+    justifyContent:"flex-end"
   },
   rateView:{
     flexDirection:"row",
     alignItems:"center",
-    marginRight:20
+    marginRight:20,
   },
   genreView:{
     flexDirection:"row",
     alignItems:"center",
     justifyContent:"space-between"
+  },
+  genresView:{
+    flexDirection:"row",
+    alignItems:"center",
+    marginRight:20,
+    width:Dimensions.get("screen").width/1.2
   }
 })
 export default styles

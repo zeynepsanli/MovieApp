@@ -15,12 +15,14 @@ const styles = StyleSheet.create({
   textView:{
     padding:10,
     justifyContent:"flex-end",
-    flex: 1
+    flex: 1,
+    backgroundColor:"#000000a0"
   },
   text:{
     fontSize:15,
     fontWeight:"800",
-    color:"white"
+    color:"white",
+    paddingRight:5
   },
   rateView:{
     flexDirection:"row",

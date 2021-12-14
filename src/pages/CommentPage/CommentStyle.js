@@ -14,6 +14,11 @@ const styles = StyleSheet.create({
     flexDirection:"row",
     flex:1,
     alignItems:"center"
+  },
+  text:{
+    padding:20,
+    textAlign:"center",
+    fontSize:25
   }
 })
 export default styles
