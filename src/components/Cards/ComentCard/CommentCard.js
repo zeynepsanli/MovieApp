@@ -6,6 +6,7 @@ import styles from "./CommentCardStyle";
 const CommentCard = ({item}) => {
     return(
         <View style={styles.container}>
+            <Text>{item.keyword}</Text>
             <Text style={styles.text}>{item.comment}</Text>
             <Text>User : {item.id}</Text>
         </View>
