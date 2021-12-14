@@ -27,12 +27,15 @@ const MovieDetailCard = ({ item }) => {
                 <Text style={styles.text}>Rate :{item.rate}</Text>
                 <Icon name="star" color="yellow" size={20} />
               </View>
-              <Text style={styles.text}>Genre :</Text>
-              {item.genre.map((gen, ind) => {
-                return (
-                  <Text key={ind} style={styles.text} >{gen}</Text>
-                )
-              })}
+              <View style={styles.rateView}>
+                <Text style={styles.text}>Genre :</Text>
+                {item.genre.map((gen, ind) => {
+                  return (
+                    <Text key={ind} style={styles.text} >{gen},</Text>
+                    )
+                  })
+                }
+              </View>
             </View>
           </View>
         </ImageBackground>

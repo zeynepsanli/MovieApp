@@ -16,7 +16,7 @@ const MovieCard = ({item, onPress}) => {
           <Text style={styles.text}>{item.name}</Text>
           <View style={styles.rateView}>
             <Text style={styles.text}>{item.rate}</Text>
-            <Icon name='star' size={25} color='yellow' />
+            <Icon name='star' size={20} color='yellow' />
           </View>
           {item.genre.map((gen, ind) => {
             return (
