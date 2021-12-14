@@ -5,4 +5,4 @@
 
 ![alt text](https://github.com/patika-128-react-native-bootcamp/week_4-zeynep-yavuz/blob/master/src/gif/5xit63.gif)
 
-![alt text](https://github.com/patika-128-react-native-bootcamp/week_4-zeynep-yavuz/blob/master/src/gif/5xitj4.gif)
+![alt text](https://github.com/patika-128-react-native-bootcamp/week_4-zeynep-yavuz/blob/master/src/gif/5xtxma.gif)
